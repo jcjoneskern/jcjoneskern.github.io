@@ -1,0 +1,176 @@
+body {
+	font-family: Verdana, sans-serif;
+	color: #211111;
+	margin: 0px;
+	background-color: #efe8da;
+}
+h1 {
+	font-family: "Titillium Web", sans-serif;
+	margin: 0px;
+}
+/*header should probably be fixed to top of page when navbar collapses*/
+header {
+	text-align: right;
+	background-color: #821a18;
+	color: #fff;
+	width: 100%;
+	padding-right: 8px;
+	box-sizing: border-box;
+	border-bottom: solid 4px #c4a86b;
+}
+main {
+	width: 80%;
+	position: relative;
+	display: inline-block;
+	float: right;
+}
+button {
+	background-color: #821a18;
+	border: 0px;
+	color: #fff;
+	border-radius: 3px;
+	font-family: "Titillium Web", sans-serif;
+}
+button:hover {
+	opacity: 0.75;
+}
+time {
+	font-style: italic;
+}
+ul {
+	list-style-position: inside;
+}
+a {
+	color: #211111;
+}
+/* navbar will collapse on smaller screens...eventually */
+nav {
+	float: left;
+	width: 20%;
+	max-width: 250px;
+	height: 100%;
+	text-align: center;
+	font-family: "Titillium Web", sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	display: inline-block;
+	position: fixed;
+}
+nav li:hover {
+	box-shadow: inset 250px 0 0 0 #D9BFB3;
+	border-left: solid 5px #821a18;
+	border-right: solid 10px #efe8da;
+	transition: box-shadow .25s ease-out;
+}
+nav ul {
+	list-style: none;
+	padding: 0px;
+}
+nav ul li {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+nav a {
+	text-decoration: none;
+}
+
+/* for index.html */
+.column {
+	display: inline-block;
+	width: 49.5%;
+	text-align: center;
+	padding: 10px 0px;
+	margin-top: 30px;
+	box-sizing: border-box;
+}
+.column h3 {
+	margin: 0px;
+}
+#intro {
+	text-align: center;
+	margin: 20px 0px;
+}
+@media (max-width: 750px) {
+	.column {
+		display: block;
+		border: 0px;
+		margin: 0 auto;
+	}
+}
+/* for resume.html */
+#headshot {
+	width: 200px;
+	border-radius: 100%;
+	display: block;
+	margin: 0 auto;
+}
+#resume ul {
+	list-style: none;
+}
+.title {
+	font-weight: bold;
+}
+/* for portfolio.html */
+#portfolio {
+	width: 100%;
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+}
+.portfolio-obj {
+	width: 100%;
+	display: -webkit-flex;	
+	display: flex;
+}
+.portfolio-obj img {
+	width: 90%;
+	opacity: 0.75;
+}
+.portfolio-obj img:hover {
+	opacity: 1;
+}
+.portfolio-obj h3, .portfolio-obj p {
+	margin: 0px;
+	padding: 3%;
+}
+.portfolio-obj a{
+	text-decoration: none;
+	color: inherit;
+}
+/*3 columns for all larger devices */
+@media all and (min-width: 801px) {
+	.portfolio-obj {
+		width: 33%;
+	}
+}
+/* 2 columns for smaller devices */
+@media all and (max-width: 800px) {
+	.portfolio-obj {
+		width: 50%;
+	}
+}
+/* 1 columns for really small devices */
+@media all and (max-width: 650px) {
+	.portfolio-obj {
+		width: 100%;
+	}
+}
+
+/*fixing weird navbar spacing on big screens*/
+@media (min-width: 1268px) {
+	main {
+	width: 80%;
+	position: absolute;
+	display: inline-block;
+	float: left;
+	margin-left: 250px;
+	}
+	nav {
+		float: left;
+		width: 20%;
+		max-width: 250px;
+		display: inline-block;
+		position: fixed;
+	}
+}
