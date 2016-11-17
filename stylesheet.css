@@ -23,6 +23,8 @@ main {
 	position: relative;
 	display: inline-block;
 	float: right;
+	padding: 0 2%;
+	box-sizing: border-box;
 }
 button {
 	background-color: #821a18;
@@ -59,7 +61,6 @@ nav {
 nav li:hover {
 	box-shadow: inset 250px 0 0 0 #D9BFB3;
 	border-left: solid 5px #821a18;
-	border-right: solid 10px #efe8da;
 	transition: box-shadow .25s ease-out;
 }
 nav ul {
@@ -97,19 +98,42 @@ nav a {
 		margin: 0 auto;
 	}
 }
-/* for resume.html */
+.icon {
+	width: 3em;
+	padding: 0 2%;
+	opacity: .8;
+}
+.icon:hover {
+	opacity: 1;
+}
 #headshot {
 	width: 200px;
 	border-radius: 100%;
 	display: block;
 	margin: 0 auto;
 }
+/* for resume.html */
 #resume ul {
 	list-style: none;
+}
+#resume h2 {
+	text-align: center;
 }
 .title {
 	font-weight: bold;
 }
+#skills li {
+	width: 30%;
+	display: inline-block;
+}
+@media (max-width: 850px) {
+	#skills li {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+}
+
 /* for portfolio.html */
 #portfolio {
 	width: 100%;
@@ -120,7 +144,7 @@ nav a {
 }
 .portfolio-obj {
 	width: 100%;
-	display: -webkit-flex;	
+	display: -webkit-flex;
 	display: flex;
 }
 .portfolio-obj img {
@@ -139,19 +163,19 @@ nav a {
 	color: inherit;
 }
 /*3 columns for all larger devices */
-@media all and (min-width: 801px) {
+@media (min-width: 801px) {
 	.portfolio-obj {
 		width: 33%;
 	}
 }
 /* 2 columns for smaller devices */
-@media all and (max-width: 800px) {
+@media (max-width: 800px) {
 	.portfolio-obj {
 		width: 50%;
 	}
 }
 /* 1 columns for really small devices */
-@media all and (max-width: 650px) {
+@media (max-width: 650px) {
 	.portfolio-obj {
 		width: 100%;
 	}
