@@ -46,6 +46,9 @@ ul {
 a {
 	color: #211111;
 }
+div > a:hover {
+	color: #763d3d;
+}
 /* navbar will collapse on smaller screens...eventually */
 nav {
 	float: left;
