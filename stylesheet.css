@@ -8,6 +8,9 @@ h1 {
 	font-family: "Titillium Web", sans-serif;
 	margin: 0px;
 }
+h2, h3, h4, h5, h6 {
+	font-family: "Titillium Web", sans-serif;
+}
 /*header should probably be fixed to top of page when navbar collapses*/
 header {
 	text-align: right;

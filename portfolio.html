@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="portfolioMod">
 <head>
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato|Titillium+Web" rel="stylesheet">
@@ -16,91 +16,16 @@
 		</ul>
 	</nav>
 	<main>
-		<section>
+		<section ng-controller="portfolioCtrl">
 			<h2>Here are some things I've made:</h2>
 			<p>Click on the image to view the site. Click on the text to view the source code on GitHub.</p>
 			<div id="portfolio">
-				<!--START ROW 1-->
-				<div class="portfolio-obj">
-					<div>
-						<a href="https://jcjoneskern.github.io/rainy-night/" target="_blank">
-						<img src="images/rainynight.png" alt="proj 1" /></a>
-						<a href="https://github.com/jcjoneskern/rainy-night" target="_blank">
-							<h3>Rainy Night</h3>
-							<p>An experiment with CSS animations.</p>
-						</a>
-					</div>
+				<div class="portfolio-obj portfolio-item" ng-repeat="item in folioContent">
 				</div>
-				<div class="portfolio-obj">
-					<div>
-						<a href="https://jcjoneskern.github.io/J-CLab8/" target="_blank">
-						<img src="images/shoppinglist.png" alt="proj 2" /></a>
-						<a href="https://github.com/jcjoneskern/J-CLab8" target="_blank">
-						<h3>Shopping List</h3>
-						<p>Takes in user input to generate a shopping list and calculate the total cost.</p>
-						</a>
-					</div>
-				</div>
-				<div class="portfolio-obj">
-					<div>
-						<a href="https://jcjoneskern.github.io/group-one-midterm/" target="_blank">
-						<img src="images/seatingchart.png" alt="proj 3" /></a>
-						<a href="https://github.com/jcjoneskern/group-one-midterm" target="_blank">
-						<h3>Chick's Flicks Seating Chart</h3>
-						<p>Midterm group project. A web app for reserving seats at a small theater.</p>
-						</a>
-					</div>
-				</div>
-				<!--END ROW 1, START ROW 2-->
-				<div class="portfolio-obj">
-					<div>
-						<a href="https://jcjoneskern.github.io/todo-list/" target="_blank">
-						<img src="images/todolist.png" alt="proj 4" />
-						<a href="https://github.com/jcjoneskern/todo-list" target="_blank">
-						<h3>To Do List</h3>
-						<p>Add new items to a to do list, delete completed items, and filter through the list to find a specific task.</p></a>
-					</div>
-				</div>
-				<div class="portfolio-obj">
-					<div>
-						<a href="https://jcjoneskern.github.io/reddit-minus-reddit/">
-						<img src="images/redditjson.png" alt="proj 5" />
-						<a href="https://github.com/jcjoneskern/reddit-minus-reddit" target="_blank">
-						<h3>Reddit Minus Reddit</h3>
-						<p>Displays the front page of the chosen subreddit.</p></a>
-					</div>
-				</div>
-				<div class="portfolio-obj">
-					<a href="https://github.com/jcjoneskern">
-					<img src="images/comingsoon.png" alt="proj 6" />
-					<h3>TBD</h3>
-					<p>More to come!</p>
-					</a>
-				</div>
-				<!--END ROW 2, START ROW 3-->
-				<!--<div class="portfolio-obj">
-					<a href="https://github.com/jcjoneskern">
-					<img src="images/comingsoon.png" alt="proj 7" />
-					<h3>TBD</h3>
-					<p>More to come!</p>
-					</a>
-				</div>
-				<div class="portfolio-obj">
-					<a href="https://github.com/jcjoneskern">
-					<img src="images/comingsoon.png" alt="proj 8" />
-					<h3>TBD</h3>
-					<p>More to come!</p>
-					</a>
-				</div>
-				<div class="portfolio-obj">
-					<a href="https://github.com/jcjoneskern">
-					<img src="images/comingsoon.png" alt="proj 9" />
-					<h3>TBD</h3>
-					<p>More to come!</p>
-					</a>
-				</div>-->
 			</div>
 		</section>
 	</main>
+	<script src="js/angular.min.js"></script>
+	<script src="js/app.js"></script>
 </body>
 </html>
