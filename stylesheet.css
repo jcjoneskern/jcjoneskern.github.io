@@ -65,7 +65,7 @@ nav {
 	display: inline-block;
 	position: fixed;
 }
-nav li:hover {
+#desktopnav li:hover {
 	box-shadow: inset 250px 0 0 0 #D9BFB3;
 	border-left: solid 5px #821a18;
 	transition: box-shadow .25s ease-out;
@@ -80,6 +80,69 @@ nav ul li {
 }
 nav a {
 	text-decoration: none;
+}
+.mobilenav {
+	display: none;
+	position: fixed;
+	background-color: #efe8da;
+	z-index: 1;
+	margin-top: 50px;
+	height: auto;
+}
+#navbutton {
+	height: 36px;
+	width: 36px;
+	border: 2px solid #fff;
+	border-radius: 3px;
+	float: left;
+	position: relative;
+	color: #fff;
+	background-color: #821a18;
+	margin: 4px;
+}
+#desktopnav {
+	height: 100%;
+}
+#plusspin {
+  text-align: center;
+  font-family: monospace;
+  font-size: 30px;
+  margin: 0px;
+}
+.anim {
+  animation: spin .2s linear;
+  transform-origin: center;
+}
+.rev-anim {
+  animation: backspin .2s linear;
+  transform-origin: center;
+}
+
+@keyframes spin {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(180deg);}
+}
+
+@keyframes backspin {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(-180deg);}
+}
+
+@media (max-width: 650px) {
+	#desktopnav {
+		display: none;
+	}
+	main {
+		width: 90%;
+		padding-top: 52px;
+		margin: 0 auto;
+		float: none;
+	}
+	header {
+		position: fixed;
+		z-index: 2;
+		clear: both;
+	}
 }
 
 /* for index.html */
