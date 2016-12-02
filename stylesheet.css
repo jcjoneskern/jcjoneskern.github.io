@@ -54,18 +54,17 @@ div > a:hover {
 }
 /* navbar will collapse on smaller screens...eventually */
 nav {
+	position: fixed;
 	float: left;
 	width: 20%;
 	max-width: 250px;
-	height: 100%;
 	text-align: center;
 	font-family: "Titillium Web", sans-serif;
 	font-weight: bold;
 	font-size: 20px;
 	display: inline-block;
-	position: fixed;
 }
-#desktopnav li:hover {
+.desktopnav li:hover {
 	box-shadow: inset 250px 0 0 0 #D9BFB3;
 	border-left: solid 5px #821a18;
 	transition: box-shadow .25s ease-out;
@@ -89,6 +88,10 @@ nav a {
 	margin-top: 50px;
 	height: auto;
 }
+.desktopnav {
+	height: 100%;
+	clear: right;
+}
 #navbutton {
 	height: 36px;
 	width: 36px;
@@ -99,9 +102,7 @@ nav a {
 	color: #fff;
 	background-color: #821a18;
 	margin: 4px;
-}
-#desktopnav {
-	height: 100%;
+	display: none;
 }
 #plusspin {
   text-align: center;
@@ -129,9 +130,6 @@ nav a {
 }
 
 @media (max-width: 650px) {
-	#desktopnav {
-		display: none;
-	}
 	main {
 		width: 90%;
 		padding-top: 52px;

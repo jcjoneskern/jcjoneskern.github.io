@@ -1,16 +1,23 @@
 $(function() {
 //controls when button appears
-//consider add/remove class instead on the nav so that it's less repetitive code
-	if ($(window).width() > 650 ) {
-			$("#navbutton").css( {"display": "none"});
+	if ($(window).outerWidth() > 650 ) {
+			$("nav").addClass("desktopnav").removeClass("mobilenav");
+		} else {
+			$("nav").addClass("mobilenav").removeClass("desktopnav");
+			$("#navbutton").css( {"display": "inline"});
 		}
 	$(window).resize(function() {
-		if ($(window).width() > 650 ) {
+		if ($(window).outerWidth() > 650 ) {
 			$("#navbutton").css( {"display": "none"});
-			$(".mobilenav").css( {"display": "none"});
-		} else if ($(window).width() < 650 ) {
+			$("nav").addClass("desktopnav").removeClass("mobilenav");
+			$(".desktopnav").css({"display":"inline-block"});
+			$("#plusspin").removeClass("anim rev-anim");
+		} else {
 			$("#navbutton").css( {"display": "inline"});
-			$(".mobilenav").css( {"display": "none"});
+			$("nav").addClass("mobilenav").removeClass("desktopnav");
+			$(".desktopnav").css({"display":"none"});
+			$(".mobilenav").css({"display":"none"});
+			$("#plusspin").addClass("rev-anim");
 		}
 	});
 	$("#navbutton").click(function() {
