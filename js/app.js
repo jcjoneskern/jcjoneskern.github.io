@@ -4,18 +4,11 @@ app.controller("portfolioCtrl", function($scope) {
   $scope.folioContent = [
     //row 1
     {
-      viewUrl: "https://jcjoneskern.github.io/rainy-night/",
-      img: "images/rainynight.png",
-      srcUrl: "https://github.com/jcjoneskern/rainy-night",
-      title: "Rainy Night",
-      desc: "An experiment with CSS animations."
-    },
-    {
-      viewUrl: "https://jcjoneskern.github.io/J-CLab8/",
-      img: "images/shoppinglist.png",
-      srcUrl: "https://github.com/jcjoneskern/J-CLab8",
-      title: "Shopping List",
-      desc: "Takes in user input to generate a shopping list and calculate the total cost."
+      viewUrl: "https://studybuddyapplication.herokuapp.com/",
+      img: "images/studybuddy.png",
+      srcUrl: "https://github.com/jcjoneskern/StudyBuddyApp",
+      title: "Study Buddy",
+      desc: "An app that helps you find the best places to study."
     },
     {
       viewUrl: "https://jcjoneskern.github.io/group-one-midterm/",
@@ -24,7 +17,13 @@ app.controller("portfolioCtrl", function($scope) {
       title: "Chick's Flicks Seating Chart",
       desc: "Midterm group project. A web app for reserving seats at a small theater."
     },
-    //row 2
+    {
+      viewUrl: "https://jcjoneskern.github.io/mad-libs/#/",
+      img: "images/madlibs1.png",
+      srcUrl: "https://github.com/jcjoneskern/mad-libs",
+      title: "Mad Libs",
+      desc: "Uses Angular to fill in the blanks for a game of mad libs."
+    },
     {
       viewUrl: "https://jcjoneskern.github.io/todo-list/",
       img: "images/todolist.png",
@@ -40,34 +39,26 @@ app.controller("portfolioCtrl", function($scope) {
       desc: "Displays the front page of the chosen subreddit."
     },
     {
-      viewUrl: "https://jcjoneskern.github.io/mad-libs/#/",
-      img: "images/madlibs1.png",
-      srcUrl: "https://github.com/jcjoneskern/mad-libs",
-      title: "Mad Libs",
-      desc: "Uses Angular to fill in the blanks for a game of mad libs."
+      viewUrl: "https://jcjoneskern.github.io/rainy-night/",
+      img: "images/rainynight.png",
+      srcUrl: "https://github.com/jcjoneskern/rainy-night",
+      title: "Rainy Night",
+      desc: "An experiment with CSS animations."
     },
-    //row 3
+    {
+      viewUrl: "https://jcjoneskern.github.io/J-CLab8/",
+      img: "images/shoppinglist.png",
+      srcUrl: "https://github.com/jcjoneskern/J-CLab8",
+      title: "Shopping List",
+      desc: "Takes in user input to generate a shopping list and calculate the total cost."
+    },
     {
       viewUrl: "https://github.com/jcjoneskern",
       img: "images/comingsoon.png",
       srcUrl: "https://github.com/jcjoneskern",
       title: "TBD",
       desc: "More to come!"
-    } //,
-    // {
-    //   viewUrl: "https://github.com/jcjoneskern",
-    //   img: "images/comingsoon.png",
-    //   srcUrl: "https://github.com/jcjoneskern",
-    //   title: "TBD",
-    //   desc: "More to come!"
-    // },
-    // {
-    //   viewUrl: "https://github.com/jcjoneskern",
-    //   img: "images/comingsoon.png",
-    //   srcUrl: "https://github.com/jcjoneskern",
-    //   title: "TBD",
-    //   desc: "More to come!"
-    // }
+    }
   ];
 });
 
