@@ -83,6 +83,8 @@ nav a {
 .mobilenav {
 	display: none;
 	position: fixed;
+	width: 50%;
+	max-width: 200px;
 	background-color: #efe8da;
 	z-index: 1;
 	margin-top: 50px;
@@ -207,7 +209,7 @@ nav a {
 	width: 100%;
 	display: -webkit-flex;
 	display: flex;
-	flex-wrap: wrap;
+	flex-flow: row wrap;
 	text-align: center;
 }
 .portfolio-obj {
@@ -230,22 +232,23 @@ nav a {
 	text-decoration: none;
 	color: inherit;
 }
-/*3 columns for all larger devices */
-@media (min-width: 801px) {
+
+/* 1 column for really small devices */
+@media (min-width: 650px) {
 	.portfolio-obj {
-		width: 33%;
+		width: 100%;
 	}
 }
 /* 2 columns for smaller devices */
-@media (max-width: 800px) {
+@media (min-width: 651px) and (max-width: 800px) {
 	.portfolio-obj {
 		width: 50%;
 	}
 }
-/* 1 columns for really small devices */
-@media (max-width: 650px) {
+/*3 columns for all larger devices */
+@media (min-width: 801px) {
 	.portfolio-obj {
-		width: 100%;
+		width: 33%;
 	}
 }
 
