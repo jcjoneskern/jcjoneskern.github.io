@@ -33,7 +33,7 @@ app.controller("portfolioCtrl", function($scope) {
     },
     {
       viewUrl: "https://jcjoneskern.github.io/millennials/",
-      img: "images/millenials.png",
+      img: "images/millennials.png",
       srcUrl: "https://github.com/jcjoneskern/millennials",
       title: "Millennial Headline Generator",
       desc: "Generates a random headline about millennials."
