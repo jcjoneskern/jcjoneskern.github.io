@@ -32,6 +32,13 @@ app.controller("portfolioCtrl", function($scope) {
       desc: "Add new items to a to do list, delete completed items, and filter through the list to find a specific task."
     },
     {
+      viewUrl: "https://jcjoneskern.github.io/millennials/",
+      img: "images/millenials.png",
+      srcUrl: "https://github.com/jcjoneskern/millennials",
+      title: "Millennial Headline Generator",
+      desc: "Generates a random headline about millennials."
+    },
+    {
       viewUrl: "https://jcjoneskern.github.io/reddit-minus-reddit/",
       img: "images/redditjson.png",
       srcUrl: "https://github.com/jcjoneskern/reddit-minus-reddit",
