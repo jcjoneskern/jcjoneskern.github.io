@@ -2,7 +2,7 @@ body {
 	font-family: "Lato", sans-serif;
 	color: #211111;
 	margin: 0px;
-	background-color: #efe8da;
+	background-color: #f7f2e6;
 }
 h1 {
 	font-family: "Titillium Web", sans-serif;
@@ -11,7 +11,6 @@ h1 {
 h2, h3, h4, h5, h6 {
 	font-family: "Titillium Web", sans-serif;
 }
-/*header should probably be fixed to top of page when navbar collapses*/
 header {
 	text-align: right;
 	background-color: #821a18;
@@ -63,7 +62,6 @@ nav {
 	font-weight: bold;
 	font-size: 20px;
 	display: inline-block;
-	/*background: #e0d3b8;*/
 }
 .desktopnav li:hover {
 	box-shadow: inset 250px 0 0 0 #D9BFB3;
@@ -88,13 +86,12 @@ nav a {
 	position: fixed;
 	width: 50%;
 	max-width: 200px;
-	background-color: #efe8da;
+	background-color: #f7f2e6;
 	z-index: 1;
 	margin-top: 46px;
 	border: 2px solid #c4a86b;
 	border-bottom-left-radius: 6px;
 	border-bottom-right-radius: 6px;
-	background: #e0d3b8;
 }
 .mobilenav li {
 	border-bottom: 1px dashed #c4a86b;
@@ -103,7 +100,7 @@ nav a {
 	border-bottom: 0;
 }
 .mobilenav li:hover, li:active {
-	background-color: #D9BFB3;
+	background-color: #ede1c5;
 }
 .desktopnav {
 	height: 100%;
