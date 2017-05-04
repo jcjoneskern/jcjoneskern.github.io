@@ -2,7 +2,6 @@ var app = angular.module("portfolioMod", []);
 
 app.controller("portfolioCtrl", function($scope) {
   $scope.folioContent = [
-    //row 1
     {
       viewUrl: "https://studybuddyapplication.herokuapp.com/",
       img: "images/studybuddy.png",

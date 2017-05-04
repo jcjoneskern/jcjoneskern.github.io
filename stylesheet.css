@@ -194,15 +194,11 @@ nav a {
 	display: block;
 	margin: 0 auto;
 }
-/* for resume.html */
-#resume ul {
-	list-style: none;
-}
-#resume h2 {
-	text-align: center;
-}
-.title {
-	font-weight: bold;
+
+/*for about.html*/
+#about {
+	padding-right: 5em;
+	width: 80%;
 }
 #skills li {
 	width: 30%;
@@ -213,6 +209,16 @@ nav a {
 		display: block;
 		width: 100%;
 		text-align: center;
+	}
+	#about {
+		padding: 0 1em;
+		margin: 0 auto;
+	}
+}
+@media (max-width: 650px) {
+	#about {
+		padding: 52px 2em 0 2em;
+		width: 100%;
 	}
 }
 
