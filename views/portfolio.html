@@ -1,38 +1,8 @@
-<!DOCTYPE html>
-<html ng-app="portfolioMod">
-<head>
-	<meta name="viewport" content="width=device-width" />
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato|Titillium+Web" rel="stylesheet">
-	<script src="js/jquery-3.1.1.min.js"></script>
-	<script src="js/script.js"></script>
-	<title>J-C | Portfolio</title>
-</head>
-<body>
-	<header>
-		<div id="navbutton">
-			<p class="rev-anim" id="plusspin">+</p>
+<section>
+	<h2>Here are some things I've made:</h2>
+	<p>Click on the image to view the site. Click on the text to view the source code on GitHub.</p>
+	<div id="portfolio">
+		<div class="portfolio-obj portfolio-item">
 		</div>
-		<h1>Portfolio</h1>
-	</header>
-	<nav class="desktopnav">
-		<ul>
-			<a href="index.html"><li>Home</li></a>
-			<a href="about.html"><li>About</li></a>
-			<a href="portfolio.html"><li>Portfolio</li></a>
-		</ul>
-	</nav>
-	<main>
-		<section ng-controller="portfolioCtrl">
-			<h2>Here are some things I've made:</h2>
-			<p>Click on the image to view the site. Click on the text to view the source code on GitHub.</p>
-			<div id="portfolio">
-				<div class="portfolio-obj portfolio-item" ng-repeat="item in folioContent">
-				</div>
-			</div>
-		</section>
-	</main>
-	<script src="js/angular.min.js"></script>
-	<script src="js/app.js"></script>
-</body>
-</html>
+	</div>
+</section>
