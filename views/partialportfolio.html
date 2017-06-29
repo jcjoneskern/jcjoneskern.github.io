@@ -1,3 +1,7 @@
 <section ng-repeat="item in content">
-  <article>{{item}}</article>
+  <article>
+    <a href={{item.viewUrl}}><img ng-src={{item.img}} alt={{item.title}}></a>
+    <a href={{item.srcUrl}}><h3>{{item.title}}</h3></a>
+    <p>{{item.desc}}</p>
+  </article>
 </section>
