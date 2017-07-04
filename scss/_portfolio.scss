@@ -1,12 +1,19 @@
 .portfolio-item {
 
+  column-count: 1;
   img {
-    width: 50%;
+    width: 80%;
   }
 
-  a {
-    text-decoration: none;
-    color: #158AB3;
+  @media (min-width: 768px) {
+    column-count: 2;
+  }
+
+  @media (min-width: 1280px) {
+    column-count: 3;
+    img {
+      width: 50%;
+    }
   }
 
 }

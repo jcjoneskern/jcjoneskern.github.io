@@ -1,6 +1,35 @@
+$offwhite: #f7f7ff;
+$darkgray: #495867;
+$lightblue: #bdd5ea;
+$darkblue: #7284a8;
+$red: #fe5f55;
+
 body {
   font-family: sans-serif;
   text-align: center;
+  background: $offwhite;
+  color: $darkgray;
+}
+
+main {
+  padding: 20px 3% 0;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: $darkblue;
+  &:hover {
+    color: $lightblue;
+  }
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
 }
 
 @import 'nav';

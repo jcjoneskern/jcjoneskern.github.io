@@ -1,8 +1,10 @@
 header {
   background: #000;
-  box-shadow: 0 3px 5px #a5a5a5;
+  box-shadow: 0 3px 5px $darkgray;
   position: fixed;
   width: 100%;
+  z-index: 1;
+  padding: 5px 0;
 }
 nav {
   text-align: center;
@@ -12,10 +14,19 @@ nav {
     li {
       display: inline-block;
       padding: 1px 3px;
+      background: $darkblue;
+      border-radius: 5px;
+      &:hover {
+        background: $lightblue;
+      }
     }
   }
   a {
     text-decoration: none;
-    color: #fff;
+    color: $offwhite;
+    font-weight: normal;
+    &:hover {
+      color: inherit;
+    }
   }
 }
