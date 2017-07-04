@@ -1,5 +1,5 @@
 (function() {
-  let app = angular.module("portfolio", ["ngRoute"]);
+  let app = angular.module("portfolio", ["ngRoute", "ngAnimate"]);
 
   app.config(function($routeProvider) {
     $routeProvider.when("/", {

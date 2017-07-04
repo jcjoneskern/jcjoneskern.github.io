@@ -17,7 +17,7 @@ nav {
       background: $darkblue;
       border-radius: 5px;
       &:hover {
-        background: $lightblue;
+        background: $red;
       }
     }
   }
@@ -26,7 +26,7 @@ nav {
     color: $offwhite;
     font-weight: normal;
     &:hover {
-      color: inherit;
+      color: $offwhite;
     }
   }
 }

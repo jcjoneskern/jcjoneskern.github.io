@@ -1,18 +1,32 @@
 .portfolio-item {
 
-  column-count: 1;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+
+  .flex-item {
+    width: 100%;
+  	display: -webkit-flex;
+  	display: flex;
+  }
+
   img {
     width: 80%;
+    &:hover {
+      box-shadow: 1px 1px 2px 1px rgba(254, 95, 85,.7), -1px -1px 2px 1px rgba(254, 95, 85,.7);
+      transition: box-shadow 150ms ease-out;
+    }
   }
 
   @media (min-width: 768px) {
-    column-count: 2;
+    .flex-item {
+      width: 50%;
+    }
   }
 
   @media (min-width: 1280px) {
-    column-count: 3;
-    img {
-      width: 50%;
+    .flex-item {
+      width: 33%;
     }
   }
 

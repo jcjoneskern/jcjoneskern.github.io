@@ -12,7 +12,7 @@ a {
   font-weight: bold;
   color: #7284a8; }
   a:hover {
-    color: #bdd5ea; }
+    color: #fe5f55; }
 
 ul {
   padding: 0; }
@@ -39,23 +39,40 @@ nav {
       background: #7284a8;
       border-radius: 5px; }
       nav ul li:hover {
-        background: #bdd5ea; }
+        background: #fe5f55; }
   nav a {
     text-decoration: none;
     color: #f7f7ff;
     font-weight: normal; }
     nav a:hover {
-      color: inherit; }
+      color: #f7f7ff; }
 
 .portfolio-item {
-  column-count: 1; }
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap; }
+  .portfolio-item .flex-item {
+    width: 100%;
+    display: -webkit-flex;
+    display: flex; }
   .portfolio-item img {
     width: 80%; }
+    .portfolio-item img:hover {
+      box-shadow: 1px 1px 2px 1px rgba(254, 95, 85, 0.7), -1px -1px 2px 1px rgba(254, 95, 85, 0.7);
+      transition: box-shadow 150ms ease-out; }
   @media (min-width: 768px) {
-    .portfolio-item {
-      column-count: 2; } }
+    .portfolio-item .flex-item {
+      width: 50%; } }
   @media (min-width: 1280px) {
-    .portfolio-item {
-      column-count: 3; }
-      .portfolio-item img {
-        width: 50%; } }
+    .portfolio-item .flex-item {
+      width: 33%; } }
+
+#skills li {
+  width: 30%;
+  display: inline-block; }
+
+@media (max-width: 850px) {
+  #skills li {
+    display: block;
+    width: 100%;
+    text-align: center; } }
