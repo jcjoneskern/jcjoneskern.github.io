@@ -1,11 +1,17 @@
 body {
-  font-family: sans-serif;
+  font-family: 'Lato', sans-serif;
   text-align: center;
-  background: #f7f7ff;
-  color: #495867; }
+  background: linear-gradient(0deg, #D8DDE7 5%, #E5E8EF 10%, #f7f7ff 15%, #f7f7ff) no-repeat fixed;
+  background-position: bottom fixed;
+  color: #495867;
+  font-size: 1.1em;
+  height: 100vh; }
 
 main {
   padding: 20px 3% 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Francois One', sans-serif; }
 
 a {
   text-decoration: none;
@@ -40,6 +46,9 @@ nav {
       border-radius: 5px; }
       nav ul li:hover {
         background: #fe5f55; }
+      nav ul li:active {
+        background: #E7574E;
+        box-shadow: inset 1px 1px 2px #2F1210, inset -1px -1px 2px #2F1210; }
   nav a {
     text-decoration: none;
     color: #f7f7ff;
