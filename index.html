@@ -10,16 +10,17 @@
 		<script type="text/javascript" src="js/lib/angular-route.min.js"></script>
 		<script type="text/javascript" src="js/lib/angular-animate.min.js"></script>
 		<script type="text/javascript" src="js/app.js"></script>
+		<script type="text/javascript" src="js/navctrl.js"></script>
 		<script type="text/javascript" src="js/portfolioctrl.js"></script>
 	</head>
 	<body ng-app="portfolio">
-		<header>
+		<header ng-controller="navCtrl">
 			<nav>
 				<ul>
-					<a href="#!/"><li>home</li></a>
-					<a href="#!/about"><li>about</li></a>
-					<a href="#!/portfolio"><li>portfolio</li></a>
-					<a href="#!/contact"><li>contact</li></a>
+					<a href="#!/"><li ng-class="status0">home</li></a>
+					<a href="#!/about"><li ng-class="status1">about</li></a>
+					<a href="#!/portfolio"><li ng-class="status2">portfolio</li></a>
+					<a href="#!/contact"><li ng-class="status3">contact</li></a>
 				</ul>
 			</nav>
 		</header>

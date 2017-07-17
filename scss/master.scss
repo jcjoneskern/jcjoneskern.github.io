@@ -8,7 +8,6 @@ body {
   font-family: 'Lato', sans-serif;
   text-align: center;
   background: linear-gradient(0deg, #D8DDE7 5%, #E5E8EF 10%, $offwhite 15%, $offwhite) no-repeat fixed;
-  background-position: bottom fixed;
   color: $darkgray;
   font-size: 1.1em;
   height: 100vh;
@@ -39,7 +38,7 @@ li {
   list-style: none;
 }
 
-@import 'animate';
+// @import 'animate';
 @import 'nav';
 @import 'portfolio';
 @import 'about';

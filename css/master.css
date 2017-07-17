@@ -2,7 +2,6 @@ body {
   font-family: 'Lato', sans-serif;
   text-align: center;
   background: linear-gradient(0deg, #D8DDE7 5%, #E5E8EF 10%, #f7f7ff 15%, #f7f7ff) no-repeat fixed;
-  background-position: bottom fixed;
   color: #495867;
   font-size: 1.1em;
   height: 100vh; }
@@ -55,6 +54,12 @@ nav {
     font-weight: normal; }
     nav a:hover {
       color: #f7f7ff; }
+
+.active {
+  background: #fe5f55; }
+
+.inactive {
+  background: #7284a8; }
 
 .portfolio-item {
   display: -webkit-flex;
