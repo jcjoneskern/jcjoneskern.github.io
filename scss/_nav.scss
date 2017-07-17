@@ -34,3 +34,10 @@ nav {
     }
   }
 }
+
+.active {
+  background: $red;
+}
+.inactive {
+  background: $darkblue;
+}
