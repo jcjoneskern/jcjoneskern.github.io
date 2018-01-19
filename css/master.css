@@ -15,9 +15,26 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    min-width: 250px; }
+  #hero button {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    font-size: 1.5rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background: none;
+    border: 0;
+    color: #fff; }
+    #hero button:hover {
+      background: #a675a1;
+      transition: background 200ms ease-out; }
   #hero a:hover {
-    color: #efd9ce; }
+    color: #efd9ce;
+    transition: color 200ms ease-out; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600; }
@@ -27,7 +44,8 @@ a {
   font-weight: bold;
   color: #a675a1; }
   a:hover {
-    color: #6a2d63; }
+    color: #6a2d63;
+    transition: color 200ms ease-out; }
 
 ul {
   padding: 0; }
@@ -35,15 +53,21 @@ ul {
 li {
   list-style: none; }
 
+#portfolio p {
+  padding: 2%; }
+
 #portfolio img {
-  width: 50%; }
+  width: 70%;
+  max-width: 500px; }
   #portfolio img:hover {
     box-shadow: 1px 1px 2px 1px rgba(106, 45, 99, 0.5), -1px -1px 2px 1px rgba(106, 45, 99, 0.5);
     transition: box-shadow 150ms ease-out; }
 
 #portfolio figure {
   margin: 0;
-  padding: 3%; }
+  padding: 5% 3%; }
+  #portfolio figure h3 {
+    margin: 1rem; }
 
 #portfolio #folio-items figure:nth-child(even) {
   background: #a675a1; }

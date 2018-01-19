@@ -9,7 +9,6 @@ body {
   text-align: center;
   color: $offblack;
   font-size: 1.1em;
-  // height: 100vh;
   background: $peach;
 }
 
@@ -27,10 +26,31 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    min-width: 250px;
+  }
+
+  button {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    font-size: 1.5rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background: none;
+    border: 0;
+    color: #fff;
+
+    &:hover {
+      background: $lightpurple;
+      transition: background 200ms ease-out;
+    }
   }
 
   a:hover {
     color: $peach;
+    transition: color 200ms ease-out;
   }
 }
 
@@ -44,6 +64,7 @@ a {
   color: $lightpurple;
   &:hover {
     color: $magenta;
+    transition: color 200ms ease-out;
   }
 }
 

@@ -1,6 +1,11 @@
 #portfolio {
+  p {
+    padding: 2%;
+  }
+
   img {
-    width: 50%;
+    width: 70%;
+    max-width: 500px;
       &:hover {
       box-shadow: 1px 1px 2px 1px rgba(106, 45, 99, 0.5), -1px -1px 2px 1px rgba(106, 45, 99, 0.5);
       transition: box-shadow 150ms ease-out;
@@ -9,7 +14,11 @@
 
   figure {
     margin: 0;
-    padding: 3%;
+    padding: 5% 3%;
+
+    h3 {
+      margin: 1rem;
+    }
   }
 
   #folio-items figure:nth-child(even) {
