@@ -4,29 +4,52 @@ $lightblue: #bdd5ea;
 $darkblue: #7284a8;
 $red: #fe5f55;
 
+$magenta: rgba(106, 45, 99, 1);
+$offblack: rgba(37, 40, 61, 1);
+$lightpurple: rgba(166, 117, 161, 1);
+$salmon: rgba(206, 162, 172, 1);
+$peach: rgba(239, 217, 206, 1);
+
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-align: center;
-  background: linear-gradient(0deg, #D8DDE7 5%, #E5E8EF 10%, $offwhite 15%, $offwhite) no-repeat fixed;
-  color: $darkgray;
+  background: linear-gradient(0deg, rgba(206, 162, 172, 0.5) 5%, $peach 10%, $peach) no-repeat fixed;
+  color: $offblack;
   font-size: 1.1em;
   height: 100vh;
 }
 
-main {
-  padding: 20px 3% 0;
+// main {
+//   padding: 0 3%;
+// }
+
+#hero {
+  color: #fff;
+  background: $magenta;
+  height: 100vh;
+  
+  h1 {
+    margin: 0;
+  }
+
+  div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Francois One', sans-serif;
+  font-weight: 600;
 }
 
 a {
   text-decoration: none;
   font-weight: bold;
-  color: $darkblue;
+  color: $lightpurple;
   &:hover {
-    color: $red;
+    color: $magenta;
   }
 }
 
@@ -39,6 +62,6 @@ li {
 }
 
 // @import 'animate';
-@import 'nav';
+// @import 'nav';
 @import 'portfolio';
 @import 'about';

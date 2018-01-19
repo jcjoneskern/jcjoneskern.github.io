@@ -1,65 +1,38 @@
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-align: center;
-  background: linear-gradient(0deg, #D8DDE7 5%, #E5E8EF 10%, #f7f7ff 15%, #f7f7ff) no-repeat fixed;
-  color: #495867;
+  background: linear-gradient(0deg, rgba(206, 162, 172, 0.5) 5%, #efd9ce 10%, #efd9ce) no-repeat fixed;
+  color: #25283d;
   font-size: 1.1em;
   height: 100vh; }
 
-main {
-  padding: 20px 3% 0; }
+#hero {
+  color: #fff;
+  background: #6a2d63;
+  height: 100vh; }
+  #hero h1 {
+    margin: 0; }
+  #hero div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Francois One', sans-serif; }
+  font-weight: 600; }
 
 a {
   text-decoration: none;
   font-weight: bold;
-  color: #7284a8; }
+  color: #a675a1; }
   a:hover {
-    color: #fe5f55; }
+    color: #6a2d63; }
 
 ul {
   padding: 0; }
 
 li {
   list-style: none; }
-
-header {
-  background: #000;
-  box-shadow: 0 3px 5px #495867;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-  padding: 5px 0; }
-
-nav {
-  text-align: center; }
-  nav ul {
-    padding: 0;
-    margin: 0; }
-    nav ul li {
-      display: inline-block;
-      padding: 1px 3px;
-      background: #7284a8;
-      border-radius: 5px; }
-      nav ul li:hover {
-        background: #fe5f55; }
-      nav ul li:active {
-        background: #E7574E;
-        box-shadow: inset 1px 1px 2px #2F1210, inset -1px -1px 2px #2F1210; }
-  nav a {
-    text-decoration: none;
-    color: #f7f7ff;
-    font-weight: normal; }
-    nav a:hover {
-      color: #f7f7ff; }
-
-.active {
-  background: #fe5f55; }
-
-.inactive {
-  background: #7284a8; }
 
 .portfolio-item {
   display: -webkit-flex;

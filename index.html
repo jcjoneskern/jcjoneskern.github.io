@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" name="viewport" content="width=device-width">
 		<title>J-C Jones-Kern</title>
-		<link href="https://fonts.googleapis.com/css?family=Francois+One|Lato" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
 		<link rel="stylesheet" href="/css/normalize.css">
 		<link rel="stylesheet" href="/css/master.css">
 		<script type="text/javascript" src="js/lib/angular.min.js"></script>
@@ -14,7 +14,7 @@
 		<script type="text/javascript" src="js/portfolioctrl.js"></script>
 	</head>
 	<body ng-app="portfolio">
-		<header ng-controller="navCtrl">
+		<!-- <header ng-controller="navCtrl">
 			<nav>
 				<ul>
 					<a href="#!/"><li ng-class="status0">home</li></a>
@@ -23,9 +23,40 @@
 					<a href="#!/contact"><li ng-class="status3">contact</li></a>
 				</ul>
 			</nav>
-		</header>
-		<main>
-			<ng-view></ng-view>
+		</header> -->
+		<main ng-controller="portfolioCtrl">
+			<header id="hero">
+				<div>
+					<h1>Hi, I'm J-C!</h1>
+					<p>I make websites.</p>
+					<p>
+						<a href="#!/portfolio">See what I've made</a> or
+						<a href="#!/contact">get @ me</a> if you want me to make something for you.
+					</p>
+				</div>
+			</header>
+
+			<h1>What I've Built</h1>
+			<p>Click on the picture to view the live site, and click on the title to view the code on
+				<a href="https://github.com/jcjoneskern">GitHub</a>.</p>
+			<div class="portfolio-item"></div>
+
+			<h1>Contact</h1>
+			<ul>
+				<li>LinkedIn:
+					<a href="https://www.linkedin.com/in/jcjoneskern/" target="_blank">/jcjoneskern</a>
+				</li>
+				<li>GitHub:
+					<a href="https://github.com/jcjoneskern/" target="_blank">jcjoneskern</a>
+				</li>
+				<li>Twitter:
+					<a href="https://twitter.com/jcjustkidding" target="_blank">@jcjustkidding</a>
+				</li>
+				<li>Email:
+					<a href="mailto:jcjoneskern@gmail.com">jcjoneskern@gmail.com</a>
+				</li>
+			</ul>
+
 		</main>
 	</body>
 </html>
