@@ -1,33 +1,24 @@
-.portfolio-item {
-
-  display: -webkit-flex;
-  display: flex;
-  flex-flow: row wrap;
-
-  .flex-item {
-    width: 100%;
-  	display: -webkit-flex;
-  	display: flex;
-  }
-
+#portfolio {
   img {
-    width: 80%;
-    &:hover {
-      box-shadow: 1px 1px 2px 1px rgba(254, 95, 85,.7), -1px -1px 2px 1px rgba(254, 95, 85,.7);
+    width: 50%;
+      &:hover {
+      box-shadow: 1px 1px 2px 1px rgba(106, 45, 99, 0.5), -1px -1px 2px 1px rgba(106, 45, 99, 0.5);
       transition: box-shadow 150ms ease-out;
     }
   }
 
-  @media (min-width: 768px) {
-    .flex-item {
-      width: 50%;
-    }
+  figure {
+    margin: 0;
+    padding: 3%;
   }
 
-  @media (min-width: 1280px) {
-    .flex-item {
-      width: 33%;
-    }
+  #folio-items figure:nth-child(even) {
+    background: $lightpurple;
+      a {
+        color: $peach;
+        &:hover {
+          color: $magenta;
+        }
+      }
   }
-
 }

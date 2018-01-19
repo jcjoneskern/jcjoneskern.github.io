@@ -2,10 +2,10 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 
-var input = './scss/*.scss';
+var input = './scss/master.scss';
 var output = './css';
 
-gulp.task('default', ['sass', 'watch', 'serve']);
+gulp.task('default', ['serve']);
 
 gulp.task('serve', ['sass'], function() {
 

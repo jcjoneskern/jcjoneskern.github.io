@@ -1,9 +1,3 @@
-$offwhite: #f7f7ff;
-$darkgray: #495867;
-$lightblue: #bdd5ea;
-$darkblue: #7284a8;
-$red: #fe5f55;
-
 $magenta: rgba(106, 45, 99, 1);
 $offblack: rgba(37, 40, 61, 1);
 $lightpurple: rgba(166, 117, 161, 1);
@@ -13,15 +7,11 @@ $peach: rgba(239, 217, 206, 1);
 body {
   font-family: 'Poppins', sans-serif;
   text-align: center;
-  background: linear-gradient(0deg, rgba(206, 162, 172, 0.5) 5%, $peach 10%, $peach) no-repeat fixed;
   color: $offblack;
   font-size: 1.1em;
-  height: 100vh;
+  // height: 100vh;
+  background: $peach;
 }
-
-// main {
-//   padding: 0 3%;
-// }
 
 #hero {
   color: #fff;
@@ -37,6 +27,10 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  a:hover {
+    color: $peach;
   }
 }
 
@@ -61,7 +55,5 @@ li {
   list-style: none;
 }
 
-// @import 'animate';
-// @import 'nav';
 @import 'portfolio';
-@import 'about';
+@import 'contact';

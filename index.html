@@ -6,57 +6,59 @@
 		<link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
 		<link rel="stylesheet" href="/css/normalize.css">
 		<link rel="stylesheet" href="/css/master.css">
-		<script type="text/javascript" src="js/lib/angular.min.js"></script>
-		<script type="text/javascript" src="js/lib/angular-route.min.js"></script>
-		<script type="text/javascript" src="js/lib/angular-animate.min.js"></script>
-		<script type="text/javascript" src="js/app.js"></script>
-		<script type="text/javascript" src="js/navctrl.js"></script>
-		<script type="text/javascript" src="js/portfolioctrl.js"></script>
 	</head>
-	<body ng-app="portfolio">
-		<!-- <header ng-controller="navCtrl">
-			<nav>
-				<ul>
-					<a href="#!/"><li ng-class="status0">home</li></a>
-					<a href="#!/about"><li ng-class="status1">about</li></a>
-					<a href="#!/portfolio"><li ng-class="status2">portfolio</li></a>
-					<a href="#!/contact"><li ng-class="status3">contact</li></a>
-				</ul>
-			</nav>
-		</header> -->
-		<main ng-controller="portfolioCtrl">
+	<body>
+		<main>
 			<header id="hero">
 				<div>
 					<h1>Hi, I'm J-C!</h1>
 					<p>I make websites.</p>
 					<p>
-						<a href="#!/portfolio">See what I've made</a> or
-						<a href="#!/contact">get @ me</a> if you want me to make something for you.
+						<a onclick="smoothScroll('portfolio')">See what I've made</a> or
+						<a onclick="smoothScroll('contact')">get @ me</a> if you want me to make something for you.
 					</p>
 				</div>
 			</header>
 
-			<h1>What I've Built</h1>
-			<p>Click on the picture to view the live site, and click on the title to view the code on
-				<a href="https://github.com/jcjoneskern">GitHub</a>.</p>
-			<div class="portfolio-item"></div>
+			<section id="portfolio">
+				<h1>What I've Built</h1>
+				<p>Click on the picture to view the live site, and click on the title to view the code on <a href="https://github.com/jcjoneskern">GitHub</a>.</p>
 
-			<h1>Contact</h1>
-			<ul>
-				<li>LinkedIn:
-					<a href="https://www.linkedin.com/in/jcjoneskern/" target="_blank">/jcjoneskern</a>
-				</li>
-				<li>GitHub:
-					<a href="https://github.com/jcjoneskern/" target="_blank">jcjoneskern</a>
-				</li>
-				<li>Twitter:
-					<a href="https://twitter.com/jcjustkidding" target="_blank">@jcjustkidding</a>
-				</li>
-				<li>Email:
-					<a href="mailto:jcjoneskern@gmail.com">jcjoneskern@gmail.com</a>
-				</li>
-			</ul>
+				<section id="folio-items">
+					<figure v-for="item in items">
+						<a v-bind:href="item.viewUrl">
+							<img v-bind:src="item.img" v-bind:alt="item.title">
+						</a>
+						<a v-bind:href="item.srcUrl">
+							<h3>{{item.title}}</h3>
+						</a>
+						<figcaption>{{item.desc}}</figcaption>
+					</figure>
+				</section>
 
+			</section>
+
+			<section id="contact">
+				<h1>Contact</h1>
+				<ul>
+					<li>LinkedIn:
+						<a href="https://www.linkedin.com/in/jcjoneskern/" target="_blank">/jcjoneskern</a>
+					</li>
+					<li>GitHub:
+						<a href="https://github.com/jcjoneskern/" target="_blank">jcjoneskern</a>
+					</li>
+					<li>Twitter:
+						<a href="https://twitter.com/jcjustkidding" target="_blank">@jcjustkidding</a>
+					</li>
+					<li>Email:
+						<a href="mailto:jcjoneskern@gmail.com">jcjoneskern@gmail.com</a>
+					</li>
+				</ul>
+			</section>
 		</main>
+
+		<script src="js/smoothscroll.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+		<script src="js/script.js"></script>
 	</body>
 </html>
