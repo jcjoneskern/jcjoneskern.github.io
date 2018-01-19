@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="/css/master.css">
 	</head>
 	<body>
+		<button class="nav hideButton ion-arrow-up-a" alt="return to top" onclick="smoothScroll('hero')"></button>
 		<main>
 			<header id="hero">
 				<div>
@@ -19,7 +20,9 @@
 						<a onclick="smoothScroll('contact')">get @ me</a> if you want me to make something for you.
 					</p>
 				</div>
-				<button onclick="smoothScroll('portfolio')" class="ion-chevron-down"></button>
+				<button onclick="smoothScroll('portfolio')">
+					<span class="ion-chevron-down"></span>
+				</button>
 			</header>
 
 			<section id="portfolio">
@@ -60,6 +63,7 @@
 		</main>
 
 		<script src="js/smoothscroll.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.4/lodash.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 		<script src="js/script.js"></script>
 	</body>

@@ -57,3 +57,13 @@ function smoothScroll(scrollLoc) {
     });
     // window.location.hash = '#' + scrollLoc;
 }
+
+function checkHeight() {
+    if (window.pageYOffset > 50) {
+        document.querySelector('.nav').classList.replace('hideButton', 'showButton');
+    } else {
+        document.querySelector('.nav').classList.replace('showButton', 'hideButton');
+    }
+}
+
+window.addEventListener('scroll', _.throttle(checkHeight, 200));

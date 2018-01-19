@@ -12,6 +12,35 @@ body {
   background: $peach;
 }
 
+.showButton {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s ease-out 0s, opacity 150ms;
+}
+
+.hideButton {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s ease-out 150ms, opacity 150ms;
+}
+
+.nav {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  color: $peach;
+  background: $offblack;
+  border-radius: 100%;
+  z-index: 1;
+  height: 40px;
+  width: 40px;
+  border: 0;
+  opacity: 0.8;
+  &:hover {
+    opacity: 1;
+  }
+}
+
 #hero {
   color: #fff;
   background: $magenta;
@@ -36,7 +65,6 @@ body {
     font-size: 1.5rem;
     display: block;
     width: 100%;
-    text-align: center;
     padding: 10px 0;
     background: none;
     border: 0;
