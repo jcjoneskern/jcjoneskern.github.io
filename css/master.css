@@ -5,16 +5,6 @@ body {
   font-size: 1.1em;
   background: #efd9ce; }
 
-.showButton {
-  visibility: visible;
-  opacity: 1;
-  transition: visibility 0s ease-out 0s, opacity 150ms; }
-
-.hideButton {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s ease-out 150ms, opacity 150ms; }
-
 .nav {
   position: fixed;
   bottom: 10px;
@@ -26,9 +16,19 @@ body {
   height: 40px;
   width: 40px;
   border: 0;
-  opacity: 0.8; }
+  visibility: hidden; }
   .nav:hover {
     opacity: 1; }
+
+.showButton {
+  visibility: visible;
+  opacity: 0.8;
+  transition: opacity 150ms ease-out; }
+
+.hideButton {
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s ease-out 150ms, opacity 150ms ease-out; }
 
 #hero {
   color: #fff;
@@ -56,6 +56,10 @@ body {
     #hero button:hover {
       background: #a675a1;
       transition: background 200ms ease-out; }
+  #hero span {
+    display: inline-block;
+    animation: 2s infinite bounce;
+    animation-delay: 1s; }
   #hero a:hover {
     color: #efd9ce;
     transition: color 200ms ease-out; }
@@ -77,8 +81,16 @@ ul {
 li {
   list-style: none; }
 
+@keyframes bounce {
+  0%, 20%, 40%, 100% {
+    transform: translateY(0); }
+  10% {
+    transform: translateY(10px); }
+  30% {
+    transform: translateY(5px); } }
+
 #portfolio p {
-  padding: 2%; }
+  padding: 0 2vh; }
 
 #portfolio img {
   width: 70%;
@@ -89,7 +101,7 @@ li {
 
 #portfolio figure {
   margin: 0;
-  padding: 5% 3%; }
+  padding: 5vh 3%; }
   #portfolio figure h3 {
     margin: 1rem; }
 

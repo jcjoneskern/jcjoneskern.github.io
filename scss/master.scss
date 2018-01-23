@@ -12,18 +12,6 @@ body {
   background: $peach;
 }
 
-.showButton {
-  visibility: visible;
-  opacity: 1;
-  transition: visibility 0s ease-out 0s, opacity 150ms;
-}
-
-.hideButton {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s ease-out 150ms, opacity 150ms;
-}
-
 .nav {
   position: fixed;
   bottom: 10px;
@@ -35,10 +23,22 @@ body {
   height: 40px;
   width: 40px;
   border: 0;
-  opacity: 0.8;
+  visibility: hidden;
   &:hover {
     opacity: 1;
   }
+}
+
+.showButton {
+  visibility: visible;
+  opacity: 0.8;
+  transition: opacity 150ms ease-out;
+}
+
+.hideButton {
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s ease-out 150ms, opacity 150ms ease-out;
 }
 
 #hero {
@@ -76,6 +76,12 @@ body {
     }
   }
 
+  span {
+    display: inline-block;
+    animation: 2s infinite bounce;
+    animation-delay: 1s;
+  }
+
   a:hover {
     color: $peach;
     transition: color 200ms ease-out;
@@ -102,6 +108,18 @@ ul {
 
 li {
   list-style: none;
+}
+
+@keyframes bounce {
+  0%, 20%, 40%, 100% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(10px);
+  }
+  30% {
+    transform: translateY(5px);
+  }
 }
 
 @import 'portfolio';

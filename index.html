@@ -4,7 +4,7 @@
 		<meta charset="utf-8" name="viewport" content="width=device-width">
 		<title>J-C Jones-Kern</title>
 		<link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
-		<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+		<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 		<link rel="stylesheet" href="/css/normalize.css">
 		<link rel="stylesheet" href="/css/master.css">
 	</head>
@@ -31,13 +31,13 @@
 
 				<section id="folio-items">
 					<figure v-for="item in items">
-						<a v-bind:href="item.viewUrl">
+						<a v-bind:href="item.viewUrl" target="_blank">
 							<img v-bind:src="item.img" v-bind:alt="item.title">
 						</a>
-						<a v-bind:href="item.srcUrl">
+						<a v-bind:href="item.srcUrl" target="_blank">
 							<h3>{{item.title}}</h3>
 						</a>
-						<figcaption>{{item.desc}}</figcaption>
+						<figcaption v-html="item.desc"></figcaption>
 					</figure>
 				</section>
 

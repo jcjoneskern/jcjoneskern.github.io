@@ -14,7 +14,7 @@ const portfolio = new Vue({
                 img: "images/millennials.png",
                 srcUrl: "https://github.com/jcjoneskern/millennials",
                 title: "Millennial Headline Generator",
-                desc: "Generates a random headline about millennials."
+                desc: "Static site that generates a random headline about millennials; also has an accompanying <a href='https://twitter.com/genyheadlines' target='_blank'>Twitter bot.</a>"
             },
             {
                 viewUrl: "https://jcjoneskern.github.io/forEach/",
