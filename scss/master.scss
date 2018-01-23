@@ -9,7 +9,7 @@ body {
   text-align: center;
   color: $offblack;
   font-size: 1.1em;
-  background: $peach;
+  background: $magenta;
 }
 
 .nav {
@@ -45,6 +45,7 @@ body {
   color: #fff;
   background: $magenta;
   height: 100vh;
+  animation: 750ms fadeIn ease-out;
   
   h1 {
     margin: 0;
@@ -79,7 +80,7 @@ body {
   span {
     display: inline-block;
     animation: 2s infinite bounce;
-    animation-delay: 1s;
+    animation-delay: 1250ms;
   }
 
   a:hover {
@@ -119,6 +120,17 @@ li {
   }
   30% {
     transform: translateY(5px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0);
   }
 }
 
